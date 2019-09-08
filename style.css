@@ -1,0 +1,47 @@
+body{
+    border-color:cyan;
+    border-style: solid;
+    border-width: 50px;
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    } 
+    label{
+    color:dodgerblue;  
+    }
+    .pub{
+    border: 10px 0px 10px 0px;
+    border-style: double;
+    border-width: 5px;
+    border-color:dodgerblue;
+    }
+    .sub{
+    border: 10px 0px 10px 0px;
+    border-style: double;
+    border-width: 5px;
+    border-color:dodgerblue;
+    text-align: center;
+    padding-top: 20px;
+    }
+    #broker{
+    color: blueviolet;
+    inline-size:350px;
+    font-size: 30px;
+    border-style: double;
+    border-color: blue; 
+    }
+    #pub-topic{
+    inline-size:320px;
+    font-size: 30px;
+    }
+    #pub-payload{
+    inline-size:335px;
+    font-size: 30px;
+    }
+    #sub-topic{
+    inline-size: 390px;
+    font-size: 30px;
+    }
+    p{
+    color: goldenrod;
+    }

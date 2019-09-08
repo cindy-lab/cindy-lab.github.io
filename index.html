@@ -2,12 +2,21 @@
 <head>
   <title>mows</title>
 </head>
+<link rel= "stylesheet" type="text/css" href="style.css"/>
 <body>
-  <h1>MQTT</h1>
-  <p>My MQTT Web App</p>
-  <button id='btn-connect'>Connect</button>
-  <label>Payload</label><input value="hello" id="pub-payload">
-  <button id='btn-publish'>Publish</button>
+    <p>My MQTT Web App</p>
+    <label><b>Broker:</label><input id="broker" value="ws://broker.hivemq.com:8000/mqtt">
+    <button id='connect' onclick="funcConnect()">Connect</button><br><br>
+    <div class="pub">
+      <label>Topic:</label><input value="greet" id="pub-topic">
+      <label><br>Payload:</label><input value="hello" id="pub-payload">
+      <button id='publish' onclick="funcPublish()">Publish</button>
+      <br><br>
+    </div>
+    <div class="sub">
+      <label><br>Topic:</label><input value="greet" id="sub-topic">
+      <button id='subscribe' onclick="funcSubscribe()">Subscribe</button>
+    </div> 
 </body>
 <script src="scripts/browserMqtt.js"></script>
 <script src="scripts/controller.js"></script>

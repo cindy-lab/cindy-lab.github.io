@@ -2,21 +2,23 @@
 <head>
   <title>mows</title>
 </head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel= "stylesheet" type="text/css" href="style.css"/>
 <body>
-    <p>My MQTT Web App</p>
-    <label><b>Broker:</label><input id="broker" value="wss://test.mosquitto.org:8081/mqtt">
-    <button id='connect' onclick="funcConnect()">Connect</button><br><br>
-    <div class="pub">
-      <label>Topic:</label><input value="greet" id="pub-topic">
-      <label><br>Payload:</label><input value="hello" id="pub-payload">
-      <button id='publish' onclick="funcPublish()">Publish</button>
-      <br><br>
-    </div>
-    <div class="sub">
-      <label><br>Topic:</label><input value="greet" id="sub-topic">
-      <button id='subscribe' onclick="funcSubscribe()">Subscribe</button>
-    </div> 
+    <p><img src="http://bee-pros.com/img/bee.png" width="150px" height="150px"/>
+  My MQTT Web App</p>
+  <label><b>Broker:</label><input id="broker" value="wss://test.mosquitto.org:8081/mqtt">
+  <button id='connect' onclick="funcConnect()"  class="btn btn-success">Connect</button><br><br>
+  <div class="pub">
+    <label>Topic:</label><input id="pub-topic" type="text" placeholder="type topic here">
+    <br><label>Payload:</label><input id="pub-payload" type="text" placeholder="type payload here">
+    <button id='publish' onclick="funcPublish()" class="btn btn-info">Publish</button>
+    <br><br>
+  </div>
+  <div class="sub">
+    <label><br>Topic:</label><input id="sub-topic" type="text" placeholder="type topic here">
+    <button id='subscribe' onclick="funcSubscribe()" class="btn btn-link">Subscribe</button>
+  </div> 
 </body>
 <script src="scripts/browserMqtt.js"></script>
 <script src="scripts/controller.js"></script>

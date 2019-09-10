@@ -2,7 +2,6 @@ body{
     border-color:cyan;
     border-style: solid;
     border-width: 50px;
-    padding-top: 50px;
     font-size: 50px;
     text-align: center;
     } 
@@ -31,15 +30,12 @@ body{
     border-color: blue; 
     }
     #pub-topic{
-    inline-size:320px;
-    font-size: 30px;
+    font-size: 25px;
     }
     #pub-payload{
-    inline-size:335px;
-    font-size: 30px;
+    font-size: 27px;
     }
-    #sub-topic{
-    inline-size: 390px;
+    #sub-topic{ 
     font-size: 30px;
     }
     p{

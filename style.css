@@ -1,8 +1,9 @@
 body{
     border-color:cyan;
     border-style: solid;
-    border-width: 50px;
-    font-size: 50px;
+    border-width: 30px;
+    font-size: 30px;
+    padding-top: 50px;
     text-align: center;
     } 
     label{

@@ -1,28 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>mows</title>
-</head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel= "stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel= "stylesheet" type="text/css" href="style.css"/>
+
 <body>
-    <p><img src="https://i.pinimg.com/originals/d4/0c/f5/d40cf5bac1bd5f0bd91679cfbc15f534.jpg" width="150" height="150"/> 
-  My MQTT Web App</p>
-  <label><b>Broker:</label><input id="broker" value="wss://test.mosquitto.org:8081/mqtt">
-  <button id='connect' onclick="funcConnect()" class="btn btn-success">Connect</button>
-  <button id='disconnect' onclick="funcDisconnect()"  class="btn btn-danger" disabled>Disconnect</button>
-  <br><br>Status:<input id='status' value="..." disabled><br><br>
-  <div class="pub">
-    <label>Topic:</label><input id="pub-topic" type="text" placeholder="type topic here">
-    <br><label>Payload:</label><input id="pub-payload" type="text" placeholder="type payload here">
-    <button id='publish' onclick="funcPublish()" class="btn btn-info">Publish</button>
-    <br><br>
-  </div>
-  <div class="sub">
-    <label><br>Topic:</label><input id="sub-topic" type="text" placeholder="type topic here">
-    <button id='subscribe' onclick="funcSubscribe()" class="btn btn-link">Subscribe</button>
-    <button id='unsubscribe' onclick="funcUnsubscribe()" class="btn btn-link">UnSubscribe</button>
-  </div> 
+    <div>
+      <h2>IoT Fan</h2>
+      <div id="status">The Fan is currently off</div>
+      <br/>
+      <button id="Off">Off</button>
+      <button id="1">1</button>
+      <button id="2">2</button>
+      <button id="3">3</button>
+    <div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 <script src="scripts/browserMqtt.js"></script>
 <script src="scripts/controller.js"></script>
 </html>
